@@ -1,0 +1,45 @@
+<div class='nav-bar'>
+	<ul>
+		<li><%= link_to 'Add a fish!', new_animal_path %></li>
+	</ul>
+</div>	
+
+<h1>ALL THE FISHIES!!!!!!!!!!</h1>
+
+<div class='row'>
+	<div class='col-md-3'>
+		<h3>Name</h3>
+	</div>
+
+	<div class='col-md-3'>
+		<h3>Picture</h3>
+	</div>
+
+	<div class='col-md-3'>
+		<h3>Description</h3>
+	</div>
+
+	<div class='col-md-3'>
+		<h3>Modify</h3>
+	</div>
+</div>
+
+<% @animals.each do |animal| %>
+	<div class='row'>
+		<div class='col-md-3'>
+			<p><b><%= animal.name %></b><br><i><%= animal.latin_name %></i></p>
+		</div>
+
+		<div class='col-md-3'>
+			<img class=thumb src= <%=animal.thumburl %>>
+		</div>
+
+		<div class='col-md-3'>
+			<p><%= animal.description %></p>
+		</div>
+
+		<div class='col-md-3'>
+			<p><%= link_to 'View', animal_path(animal) %><br><%= link_to 'Morph', edit_animal_path(animal) %><br><%= link_to 'Exterminate', animal_path(animal), method: :delete, data: { confirm: 'Destroy this fishie? You monster!'} %></p>
+		</div>
+	</div>
+<% end %>

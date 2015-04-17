@@ -1,0 +1,14 @@
+<h1> My animalzzzzzzz, let me show them to you...... =D</h1>
+
+<p>
+	<%= @animal.name %> <br>
+	<i><%= @animal.latin_name %></i>
+</p>
+
+<img src = <%= @animal.thumburl %> class= big-pic>
+
+<p>
+	<%= @animal.description %>
+</p>
+
+<%= link_to 'I want different fish now!', animals_path %>

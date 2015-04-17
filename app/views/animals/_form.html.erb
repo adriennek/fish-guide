@@ -1,0 +1,38 @@
+<%= form_for @animal do |f| %>
+	<% if @animal.errors.any? %>
+		<div id='error_explanation'>
+			<h2>
+				Womp womp womp. You made <%= pluralize(@animal.errors.count, "error") %> and now this animal cannae be saved!
+			</h2>
+			<ul>
+				<% @animal.errors.full_messages.each do |msg| %>
+					<li><%= msg %></li>
+				<% end %>
+			</ul>
+		</div>
+	<% end %>
+
+	<p>
+		<%= f.label :name %><br>
+		<%= f.text_field :name%>
+	</p>
+
+	<p>
+		<%= f.label :latin_name %><br>
+		<%= f.text_field :latin_name %>
+	</p>
+
+	<p>
+		<%= f.label :thumburl %><br>
+		<%= f.url_field :thumburl %>
+	<p>
+		<%= f.label :description %><br>
+		<%= f.text_area :description %>
+	</p>
+
+	<p>
+		<%= f.submit %>
+	</p>
+
+	
+<% end %>

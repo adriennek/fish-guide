@@ -1,0 +1,25 @@
+body {
+	background-color: lightblue;
+	text-align: center;
+	font-family: arial;
+}
+
+ul {
+	text-align: center;
+}
+
+li {
+	vertical-align: top;
+	display: inline-block;
+	padding: 5px;
+	text-transform: uppercase;
+	font-weight: bold;
+	color: black;
+	font-size: 24px;
+	border: black;
+}
+
+.jumbotron {
+	background-image: url('http://goo.gl/TSudWH');
+}
+
