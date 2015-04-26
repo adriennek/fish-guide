@@ -1,0 +1,30 @@
+<%= form_for @family do |f| %>
+	<% if @family.errors.any? %>
+		<div id='error_explanation'>
+			<h2>
+				Womp womp womp. You made <%= pluralize(@family.errors.count, "error") %> and now this family cannae be saved!
+			</h2>
+			<ul>
+				<% @family.errors.full_messages.each do |msg| %>
+					<li><%= msg %></li>
+				<% end %>
+			</ul>
+		</div>
+	<% end %>
+
+	<p>
+		<%= f.label :name %><br>
+		<%= f.text_field :name %>
+	</p>
+
+	<p>
+		<%= f.label :picture %><br>
+		<%= f.url_field :picture %>
+	</p>
+
+	<p>
+		<%= f.submit %>
+	</p>
+
+	
+<% end %>

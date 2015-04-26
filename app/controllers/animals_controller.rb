@@ -45,5 +45,5 @@ end
 
 private
 	def animal_params
-		params.require(:animal).permit(:name, :latin_name, :thumburl, :description)
+		params.require(:animal).permit(:name, :latin_name, :thumburl, :description, :family)
 	end
