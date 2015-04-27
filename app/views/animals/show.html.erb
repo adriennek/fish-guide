@@ -5,7 +5,12 @@
 	<i><%= @animal.latin_name %></i>
 </p>
 
-<img src = <%= @animal.thumburl %> class= big-pic>
+<img src = <% if @animal.thumburl.present? %>
+				<%= @animal.thumburl %>
+			<% else %>
+				<%= 'http://www.stoneburneracupuncture.com/wp-content/uploads/2014/06/question-mark-512.jpg' %>
+			<% end %>
+	 class= 'big-pic'>
 
 <p>
 	<%= @animal.description %>

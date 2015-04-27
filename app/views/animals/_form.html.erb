@@ -14,7 +14,9 @@
 
 	<p>
 		<%= f.label :family %> <br>
-		<%= f.text_field :family %>
+		<%= f.collection_select :family, Animal::FAMILIES, :to_s, :to_s,
+			:include_blank => true
+		 %>
 
 	<p>
 		<%= f.label :name %><br>
