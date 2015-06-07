@@ -1,0 +1,54 @@
+// Place all the styles related to the families controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.fam-div {
+	height:190px;
+	border: solid #3498db 2px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	border-radius: 25px;
+}
+
+h4 {
+	font-family: Verdana;
+	color: white;
+	text-align: center;
+	margin: auto;
+	vertical-align: middle;
+}
+
+#roundfish {
+	background-image:url('https://fishingblues.files.wordpress.com/2010/11/pa130089.jpg');
+}
+
+#flatfish {
+	background-image: url('http://www.afsc.noaa.gov/species/images/atfpile_small.jpg');
+}
+
+#rockfish {
+	background-image:url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSdJqU6Kt-3oiaVOwYgK8mUqbcvgrI1qMSi9TOm6Jt_zNzwPw_FQ') ;
+}
+
+#mammal {
+	background-image:url('http://upload.wikimedia.org/wikipedia/commons/d/d4/Sea_otter_pair2.jpg') ;
+}
+
+#salmon {
+	background-image:url('http://cdn1.belfasttelegraph.co.uk/migration_catalog/article28856385.ece/50cb8/ALTERNATES/h342/salmon');
+}
+
+#skate {
+	background-image:url('http://www.iflscience.com/sites/www.iflscience.com/files/styles/ifls_large/public/blog/%5Bnid%5D/557281_633155956705419_766251346_n%20(1).jpg?itok=zknwfeU9') ;
+}
+
+#sculpin {
+	background-image:url('https://c1.staticflickr.com/7/6204/6150220137_6f38e62180_b.jpg') ;
+}
+
+#incidental {
+	background-image:url('https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSqQ-aBtOPrpE9TRttTd34htAoMifySLxQ-PEhwJdIii1Vi4zK_MeRTI1c') ;
+}
+
+#invertebrate {
+	background-image:url('https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT-OZ-s8A8_40uBJH72zJ9h6lRbOGgk2hBliVtpxAwutx5qXXNV') ;
+}
