@@ -2,18 +2,21 @@
 
 =System requirements
 
-Verified to work on:
+Verified to work with:
 
 	*ruby version 1.9.3p484
+
 	*rubygems version 2.4.7
+
 	*Rails 4.2.1
+
 	*sqlite 2.8.17
 
 =Running
 
 cd to directory "fish-guide"
+
 run "bin/rails server"
 
+point browser @ http://localhost:3000/
 
-
-<tt>rake doc:app</tt>.
