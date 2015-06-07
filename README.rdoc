@@ -1,28 +1,19 @@
 == README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+=System requirements
 
-Things you may want to cover:
+Verified to work on:
 
-* Ruby version
+	*ruby version 1.9.3p484
+	*rubygems version 2.4.7
+	*Rails 4.2.1
+	*sqlite 2.8.17
 
-* System dependencies
+=Running
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+cd to directory "fish-guide"
+run "bin/rails server"
 
 
-Please feel free to use a different markup language if you do not plan to run
+
 <tt>rake doc:app</tt>.
