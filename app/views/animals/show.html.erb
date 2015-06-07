@@ -1,0 +1,19 @@
+<h1> My animalzzzzzzz, let me show them to you...... =D</h1>
+
+<p>
+	<%= @animal.name %> <br>
+	<i><%= @animal.latin_name %></i>
+</p>
+
+<img src = <% if @animal.thumburl.present? %>
+				<%= @animal.thumburl %>
+			<% else %>
+				<%= 'http://www.stoneburneracupuncture.com/wp-content/uploads/2014/06/question-mark-512.jpg' %>
+			<% end %>
+	 class= 'big-pic'>
+
+<p>
+	<%= @animal.description %>
+</p>
+
+<%= link_to 'I want different fish now!', animals_path %>
