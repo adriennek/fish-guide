@@ -1,4 +1,6 @@
-== README
+== North Pacific Fish Guide
+
+A web based app built in Ruby on Rails for identifying fish using a number of factors.
 
 =System requirements
 
