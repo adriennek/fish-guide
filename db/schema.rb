@@ -13,17 +13,18 @@
 
 ActiveRecord::Schema.define(version: 20150423015242) do
 
-  create_table "animals", force: true do |t|
+  create_table "animals", force: :cascade do |t|
     t.string   "name"
     t.string   "latin_name"
     t.text     "description"
+    t.string   "picture"
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "thumburl"
     t.string   "family"
   end
 
-  create_table "families", force: true do |t|
+  create_table "families", force: :cascade do |t|
     t.string   "name"
     t.string   "picture"
     t.datetime "created_at"
